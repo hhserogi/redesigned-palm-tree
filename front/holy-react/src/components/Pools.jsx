@@ -14,7 +14,7 @@ const Pools = () => {
     // Функция для получения данных от сервера
     const fetchPoolData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/pool-info");
+        const response = await axios.get("http://holycoin.online/api/pool-info");
         setPoolData(response.data);
         setLoading(false);
       } catch (err) {
